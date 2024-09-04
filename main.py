@@ -12,17 +12,22 @@ def linearEquationTwo(array1,array2):
         return x,y
     except ZeroDivisionError:
         return "Inconsistent System or Dependant System"
+    except SyntaxError:
+        return "Syntax error"
 
 def linearEquationThree(array1,array2,array3):
     a,b,c,d,e,f,g,h,i,j,k,l = array1[0],array1[1],array1[2],array1[3],array2[0],array2[1],array2[2],array2[3],array3[0],array3[1],array3[2],array3[3]
     
-    z = (((a**2)*l*f)-(a*l*e*b)-(i*d*a*f)+(i*b*a*h)-((a**2)*j*h)+(a*j*e*d))/((i*b*a*g)-(i*c*a*f)+((a**2)*k*f)-(a*k*e*b)+(a*j*e*c)-((a**2)*j*g))
-    y = ((a*h)-(e*d)+(z*((e*c)-(a*g))))/((a*f)-(e*b))
-    x = (d-(b*y)-(c*z))/(a)
+    try:
+        z = (((a**2)*l*f)-(a*l*e*b)-(i*d*a*f)+(i*b*a*h)-((a**2)*j*h)+(a*j*e*d))/((i*b*a*g)-(i*c*a*f)+((a**2)*k*f)-(a*k*e*b)+(a*j*e*c)-((a**2)*j*g))
+        y = ((a*h)-(e*d)+(z*((e*c)-(a*g))))/((a*f)-(e*b))
+        x = (d-(b*y)-(c*z))/(a)
 
-    z = "{:.3f}".format(z)
-    y = "{:.3f}".format(y)
-    x = "{:.3f}".format(x)
-    return x,y,z
-
-print(linearEquationThree([1,-3,1,-5],[-3,-1,-1,1],[2,-2,3,1]))
+        z = "{:.3f}".format(z)
+        y = "{:.3f}".format(y)
+        x = "{:.3f}".format(x)
+        return x,y,z
+    except ZeroDivisionError:
+        return "Inconsistent System/Dependent System"
+    except SyntaxError:
+        return "Syntax error"
