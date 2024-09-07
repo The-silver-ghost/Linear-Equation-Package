@@ -1,1 +1,1 @@
-
+from linearEquation.linearEquation import *
