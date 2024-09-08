@@ -7,6 +7,7 @@ setup(
     license="MIT",
     author="Sanjeevan Rames",
     author_email="sanjeevanrames11@gmail.com",
-    packages=[],
-    requires=[],
+    packages=["linearEquation"],
+    install_requires=[],
+    keywords=["python","linear Equation"]
 )
