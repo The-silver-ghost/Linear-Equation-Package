@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup,find_packages
 
 setup(
     name="linearEquationSolver",
@@ -7,7 +7,7 @@ setup(
     license="MIT",
     author="Sanjeevan Rames",
     author_email="sanjeevanrames11@gmail.com",
-    packages=["linearEquation"],
+    packages=find_packages(exclude=["tests"]),
     install_requires=[],
     keywords=["python","linear Equation"]
 )
