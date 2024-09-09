@@ -4,7 +4,7 @@ long_descript = open("README.md").read()
 
 setup(
     name="linearEquationSolver",
-    version="1.1",
+    version="1.2",
     description="Module to solve linear equations in 2 and 3 variables",
     long_description_content_type="text/markdown",
     long_description= long_descript,
