@@ -2,7 +2,7 @@ from setuptools import setup,find_packages
 
 setup(
     name="linearEquationSolver",
-    version="1.0",
+    version="1.1",
     description="Module to solve linear equations in 2 and 3 variables",
     license="MIT",
     author="Sanjeevan Rames",
