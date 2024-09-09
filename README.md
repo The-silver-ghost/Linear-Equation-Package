@@ -9,7 +9,7 @@ refer to LICENSE in github
 ## Installation
 
 ```bash
-pip install linearEquationSolver==1.1
+pip install linearEquationSolver
 
 ```
 
